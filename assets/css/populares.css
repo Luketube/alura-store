@@ -1,12 +1,12 @@
 .populares{
-    padding: 3rem 2rem;
+    padding: 3rem 0;
 }
 
 .populares__cabecalho{
     border-bottom: 1px solid #dcdcdc ;
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .populares__titulo{
@@ -44,6 +44,16 @@
     margin-right: 0;
 }
 
+.populares__card___titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.populares__card___data{
+    font-size: 1rem;
+    color: #444444;;
+}
+
 .populares__card___imagem{
     grid-area: card-imagem;
     height: 100%;
@@ -67,4 +77,5 @@
 
 .populares__card___descricao{
     grid-area: card-descricao;
+    text-align: justify;
 }
