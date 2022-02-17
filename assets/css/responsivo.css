@@ -1,5 +1,5 @@
-@media screen and (max-width: 768px) {
-    .destaques__principal{
+@media screen and (max-width: 600px) {
+    .destaques__principal, .destaques__categorias{
         grid-column: 1 / 5;
     }
     
@@ -9,7 +9,40 @@
         grid-row: none;
     }
 
-    .destaques__categorias{
+    .populares__card{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: .75rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .destaques__principal, .destaques__categorias{
         grid-column: 1 / 5;
+    }
+    
+    .destaques__secundario{
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+
+    .populares__card{
+        width: calc(50% - .75rem);
+        margin-bottom: .75rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .populares__card{
+        width: calc(33% - .75rem);
+        margin-bottom: .75rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px){
+    .populares__card{
+        width: calc(25% - .75rem);
+        margin-bottom: .75rem;
     }
 }
